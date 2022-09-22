@@ -19,9 +19,16 @@ public class ClinicaApp {
 	public static void main(String[] args) {
 		
 		// Criar um plano de saúde
-		PlanoDeSaude plano = new PlanoDeSaude();
-		plano.setOperadora("Unimed");
-		plano.setTipoDoPlano("Prata");
+		PlanoDeSaude plano1 = new PlanoDeSaude();
+		plano1.setOperadora("Unimed"); 
+		plano1.setTipoDoPlano("Prata"); 
+		
+		PlanoDeSaude plano2 = new PlanoDeSaude();
+		plano2.setOperadora("Bradesco");
+		plano2.setTipoDoPlano("Ouro");
+		
+		PlanoDeSaude plano3 = new PlanoDeSaude("Amil");
+		
 		
 		// Criar um endereço
 		Endereco endereco = new Endereco();
@@ -45,7 +52,7 @@ public class ClinicaApp {
 		paciente.setTipoSanguineo("O+");
 		paciente.setGenero(Genero.FEMININO);
 		paciente.setEndereco(endereco);
-		paciente.setPlanoDeSaude(plano);
+		paciente.setPlanoDeSaude(plano1);
 		
 		// Criar uma especialidade médica
 		Especialidade especialidade1 = new Especialidade();
