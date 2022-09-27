@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 import br.senai.sp.jandira.model.PlanoDeSaude;
 
-public class PlanoDeSaudeDAO {
+public class PlanoDeSaudeDAO { // Simular o banco de dados
 
 	private PlanoDeSaude planoDeSaude;
-	private ArrayList<PlanoDeSaude> planos = new ArrayList<>();
+	private static ArrayList<PlanoDeSaude> planos = new ArrayList<>(); // repositório de planos
 	
 	
 	//Construtor
@@ -24,7 +24,7 @@ public class PlanoDeSaudeDAO {
 		
 	}
 	
-	public ArrayList<PlanoDeSaude> listarTods(){
+	public static ArrayList<PlanoDeSaude> listarTodos(){
 		return planos;
 	}
 	
